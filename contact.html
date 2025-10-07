@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Altralink | Get in Touch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" style="color: inherit; text-decoration: none;">Altralink</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team for support, sales, or general inquiries</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card priority">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our customer service team</p>
+                    <div class="contact-details">
+                        <a href="tel:+18889291991" class="contact-link primary">+1(888) 929-1991</a>
+                        <span class="availability">Available 24/7</span>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="tel:+18889291991" class="btn btn-primary">Call Now</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support agents online</p>
+                    <div class="contact-details">
+                        <span class="contact-link">Instant Support</span>
+                        <span class="availability">24/7 Online</span>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="#chat" class="btn btn-outline">Start Chat</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us your questions or concerns</p>
+                    <div class="contact-details">
+                        <a href="mailto:support@altralink.com" class="contact-link">support@altralink.com</a>
+                        <span class="availability">Response within 24 hours</span>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="mailto:support@altralink.com" class="btn btn-outline">Send Email</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <p>Get help with technical issues</p>
+                    <div class="contact-details">
+                        <a href="tel:+18889291991" class="contact-link">+1(888) 929-1991</a>
+                        <span class="availability">24/7 Emergency Support</span>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="tel:+18889291991" class="btn btn-primary emergency">Emergency Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-content">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="new-service">New Service Inquiry</option>
+                            <option value="technical-support">Technical Support</option>
+                            <option value="billing">Billing Question</option>
+                            <option value="service-change">Service Change Request</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="compliment">Compliment</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service-type">Service Interest</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="service[]" value="home-internet">
+                                <span class="checkmark"></span>
+                                Home Internet
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="service[]" value="cable-tv">
+                                <span class="checkmark"></span>
+                                Cable TV
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="service[]" value="business">
+                                <span class="checkmark"></span>
+                                Business Solutions
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="service[]" value="bundle">
+                                <span class="checkmark"></span>
+                                Bundle Package
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Please provide details about your inquiry..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span class="checkmark"></span>
+                            I would like to receive promotional emails and updates from Altralink
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                        <button type="reset" class="btn btn-outline">
+                            <i class="fas fa-undo"></i>
+                            Reset Form
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section class="office-locations">
+        <div class="container">
+            <h2 class="section-title">Our Offices</h2>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-header">
+                        <h3>Corporate Headquarters</h3>
+                        <span class="location-type">Main Office</span>
+                    </div>
+                    <div class="location-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Technology Drive<br>Innovation City, IC 12345</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+18889291991">+1(888) 929-1991</a>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat-Sun: 9:00 AM - 5:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-header">
+                        <h3>Regional Office - East</h3>
+                        <span class="location-type">Regional Hub</span>
+                    </div>
+                    <div class="location-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>456 East Coast Boulevard<br>Metro City, MC 67890</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+18889291991">+1(888) 929-1991</a>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 3:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-header">
+                        <h3>Regional Office - West</h3>
+                        <span class="location-type">Regional Hub</span>
+                    </div>
+                    <div class="location-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>789 West Coast Avenue<br>Pacific City, PC 13579</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+18889291991">+1(888) 929-1991</a>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 3:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Quick Access -->
+    <section class="quick-faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h3>How do I check service availability?</h3>
+                    <p>Call us at +1(888) 929-1991 with your address, and we'll check availability in your area instantly.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>What are your installation timeframes?</h3>
+                    <p>Most installations are completed within 3-5 business days of order confirmation. Emergency installations available.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Do you offer 24/7 support?</h3>
+                    <p>Yes! Our technical support team is available 24/7 to help with any issues or emergencies.</p>
+                </div>
+                <div class="faq-card">
+                    <h3>Can I bundle services for savings?</h3>
+                    <p>Absolutely! Our bundle packages can save you up to $30/month compared to individual services.</p>
+                </div>
+            </div>
+            <div class="faq-cta">
+                <a href="index.html#faq" class="btn btn-outline">View All FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-card">
+                <div class="emergency-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="emergency-content">
+                    <h3>Emergency Support</h3>
+                    <p>Experiencing a service outage or urgent technical issue? Our emergency support team is standing by 24/7.</p>
+                    <a href="tel:+18889291991" class="btn btn-primary emergency">
+                        <i class="fas fa-phone"></i>
+                        Emergency Hotline: +1(888) 929-1991
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Altralink</h3>
+                    <p>Connecting you to the future with lightning-fast internet and premium cable services.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Home Internet</a></li>
+                        <li><a href="services.html">Cable TV</a></li>
+                        <li><a href="services.html">Business Solutions</a></li>
+                        <li><a href="services.html">Tech Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#news">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                        <li><a href="#accessibility">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Altralink. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
